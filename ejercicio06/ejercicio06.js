@@ -6,16 +6,15 @@
  */
 
 function parImparNulo(num) {
-	//Escribe tu codigo aqui
-	if (num === 0) {
-		return `El numero es 0`;
-	} else {
-		if (num % 2 == 0) {
-			return `El numero es par`;
-		} else {
-			return `El numero es impar`;
-		}
-	}
+  if (num === 0) {
+    return `El numero es 0`;
+  } else {
+    if (num % 2 == 0) {
+      return `El numero es par`;
+    } else {
+      return `El numero es impar`;
+    }
+  }
 }
 
 module.exports = { parImparNulo };

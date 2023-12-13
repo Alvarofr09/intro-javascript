@@ -12,13 +12,12 @@
 // el numero de sonidos es 0, es un error y debe de imprimir error.
 
 function temperaturaGrillo(sonidosGrillo) {
-	//Escribe tu codigo aqui
-	if (sonidosGrillo > 0) {
-		let temperatura = sonidosGrillo / 4 + 40;
-		return temperatura;
-	} else {
-		return "Error";
-	}
+  if (sonidosGrillo > 0) {
+    let temperatura = sonidosGrillo / 4 + 40;
+    return temperatura;
+  } else {
+    return "Error";
+  }
 }
 
 module.exports = { temperaturaGrillo };

@@ -10,13 +10,12 @@
  */
 
 function precioEnLitros(galon) {
-	//Escribe tu codigo aqui
-	let litrosGas = galon * 3.78541;
-	let precioGas = 1.333;
+  let litrosGas = galon * 3.78541;
+  let precioGas = 1.333;
 
-	let total = litrosGas * precioGas;
+  let total = litrosGas * precioGas;
 
-	return total;
+  return total;
 }
 
 module.exports = { precioEnLitros };

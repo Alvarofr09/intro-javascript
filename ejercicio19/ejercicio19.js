@@ -5,8 +5,22 @@
  *  el usuario no insertará numeros negativos.
  */
 
-function mediaArrayHastaMenosUno() {
-  //Escribe tu codigo aqui
+function mediaArrayHastaMenosUno(array) {
+  let suma = 0;
+  let cantidad = 0;
+  let i = 0;
+
+  while (i < array.length && array[i] !== -1) {
+    suma += array[i];
+    cantidad++;
+    i++;
+  }
+
+  if (cantidad === 0) {
+    return 0;
+  }
+
+  return suma / cantidad;
 }
 
 module.exports = { mediaArrayHastaMenosUno };

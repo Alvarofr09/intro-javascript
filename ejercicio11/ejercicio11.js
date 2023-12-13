@@ -14,18 +14,17 @@
  */
 
 function descuentoCompra(monto) {
-	//Escribe tu codigo aqui
-	if (monto < 500) {
-		return monto;
-	} else if (monto > 500 && monto <= 1000) {
-		return monto - monto * 0.05;
-	} else if (monto > 1000 && monto <= 7000) {
-		return monto - monto * 0.1;
-	} else if (monto > 7000 && monto <= 15000) {
-		return monto - monto * 0.2;
-	} else if (monto > 15000) {
-		return monto - monto * 0.25;
-	}
+  if (monto < 500) {
+    return monto;
+  } else if (monto > 500 && monto <= 1000) {
+    return monto - monto * 0.05;
+  } else if (monto > 1000 && monto <= 7000) {
+    return monto - monto * 0.1;
+  } else if (monto > 7000 && monto <= 15000) {
+    return monto - monto * 0.2;
+  } else if (monto > 15000) {
+    return monto - monto * 0.25;
+  }
 }
 
 module.exports = { descuentoCompra };

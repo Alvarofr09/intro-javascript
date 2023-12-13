@@ -8,14 +8,24 @@
  */
 
 function sumaNPrimerosNumerosPares(N) {
-	//Escribe tu codigo aqui
-	let total = 0;
+  let total = 0;
+  let numeroActual;
 
-	for (let i = 0; i < N; i++) {
-		total += N * 2 + i * 2;
-	}
+  if (N % 2 === 0) {
+    numeroActual = N;
+  } else {
+    numeroActual = N + 1;
+  }
 
-	return total;
+  let i = 0;
+
+  do {
+    total += numeroActual;
+    numeroActual += 2;
+    i++;
+  } while (i < N);
+
+  return total;
 }
 
 module.exports = { sumaNPrimerosNumerosPares };

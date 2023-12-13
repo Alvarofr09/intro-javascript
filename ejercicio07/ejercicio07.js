@@ -7,14 +7,12 @@
  */
 
 function cambioCliente(dinEntre, costProduct) {
-	//Escribe tu codigo aqui
-
-	if (dinEntre > costProduct) {
-		let total = dinEntre - costProduct;
-		return total;
-	} else {
-		return `pago insuficiente`;
-	}
+  if (dinEntre > costProduct) {
+    let total = dinEntre - costProduct;
+    return total;
+  } else {
+    return `pago insuficiente`;
+  }
 }
 
 module.exports = { cambioCliente };

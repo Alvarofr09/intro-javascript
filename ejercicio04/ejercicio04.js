@@ -7,17 +7,15 @@
  */
 
 function sumOrMultiply(num1, num2, num3) {
-	//Escribe tu codigo aqui
-
-	if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
-		if (num1 < 0) {
-			return num1 * num2 * num3;
-		} else {
-			return num1 + num2 + num3;
-		}
-	} else {
-		return `Has introducido uno o varios caracteres no validos`;
-	}
+  if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+    if (num1 < 0) {
+      return num1 * num2 * num3;
+    } else {
+      return num1 + num2 + num3;
+    }
+  } else {
+    return `Has introducido uno o varios caracteres no validos`;
+  }
 }
 
 module.exports = { sumOrMultiply };

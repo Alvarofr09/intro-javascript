@@ -6,15 +6,13 @@
  */
 
 function calcularSuperficie(base, altura) {
-	//Escribe tu codigo aqui
-	let superficie = base * altura;
-	return `La superficie es de ${superficie}`;
+  let superficie = base * altura;
+  return `La superficie es de ${superficie}`;
 }
 
 function calcularPerimetro(base, altura) {
-	//Escribe tu codigo aqui
-	let perimetro = 2 * (base + altura);
-	return `El perimetro es de ${perimetro}`;
+  let perimetro = 2 * (base + altura);
+  return `El perimetro es de ${perimetro}`;
 }
 
 module.exports = { calcularPerimetro, calcularSuperficie };

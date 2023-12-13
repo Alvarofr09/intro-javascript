@@ -6,14 +6,13 @@
  */
 
 function calcularSumaNumerosNaturales(N) {
-	//Escribe tu codigo aqui
-	let total = 0;
+  let total = 0;
 
-	for (let i = 0; i <= N; i++) {
-		total = total + i;
-	}
+  for (let i = 0; i <= N; i++) {
+    total = total + i;
+  }
 
-	return total;
+  return total;
 }
 
 module.exports = { calcularSumaNumerosNaturales };
