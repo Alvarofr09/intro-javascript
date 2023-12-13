@@ -5,8 +5,23 @@
  * Recuerda usar la estructura condicional If.
  */
 
-function compareThreeNumbers() {
-//Escribe tu codigo aqui
+function compareThreeNumbers(num1, num2, num3) {
+	//Escribe tu codigo aqui
+	if (num1 == num2 && num1 == num3) {
+		return `iguales`;
+	} else {
+		if (num1 > num2) {
+			if (num1 > num3) {
+				return num1;
+			} else {
+				return num3;
+			}
+		} else if (num2 > num3) {
+			return num2;
+		} else {
+			return num3;
+		}
+	}
 }
 
 module.exports = { compareThreeNumbers };

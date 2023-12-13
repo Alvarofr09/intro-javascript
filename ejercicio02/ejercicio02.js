@@ -4,24 +4,29 @@
  * de la operacion correcta segun el nombre de la funcion
  */
 
-function sum() {
+function sum(a, b) {
  //Escribe tu codigo aqui
+ return a + b;
 }
 
-function substract() {
+function substract(a, b) {
  //Escribe tu codigo aqui
+ return a - b;
 }
 
-function multiply() {
+function multiply(a, b) {
  //Escribe tu codigo aqui
+ return a * b;
 }
 
-function divide() {
+function divide(a, b) {
  //Escribe tu codigo aqui
+ return a / b;
 }
 
 function total() {
  //Escribe tu codigo aqui
+ return sum(1, 2) + substract(1, 2) + multiply(1, 2) + divide(1, 2);
 }
 
 module.exports = { sum, substract, multiply, divide, total };
