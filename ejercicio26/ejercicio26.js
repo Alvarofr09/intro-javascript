@@ -4,8 +4,10 @@
  *  calule el cubo de cada uno de ellos. Recuerda la estructura For;
  */
 
-function cuboNumerosArray() {
-  //Escribe tu codigo aqui
+function cuboNumerosArray(array) {
+	for (let i = 1; i <= array.length; i++) {
+		console.log(`El cubo de ${i} es ${Math.pow(i, 3)}`);
+	}
 }
 
 module.exports = { cuboNumerosArray };

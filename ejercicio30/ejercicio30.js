@@ -25,18 +25,43 @@
 
 // Apartado A --------------------------------------------------------------------------
 
-function trianguloConsola() {
-  //Escribe tu codigo aqui
+function trianguloConsola(row) {
+	let resultado = "";
+	for (let i = 1; i <= row; i++) {
+		for (let j = 1; j <= i; j++) {
+			resultado += String(j);
+		}
+		resultado += "\n";
+	}
+
+	return resultado;
 }
 
 // Apartado B --------------------------------------------------------------------------
-function trianguloConsolaB() {
-  //Escribe tu codigo aqui
+function trianguloConsolaB(row) {
+	let resultado = "";
+	for (let i = 1; i <= row; i++) {
+		for (let j = 1; j <= i; j++) {
+			resultado += String(i);
+		}
+		resultado += "\n";
+	}
+
+	return resultado;
 }
 
 // Apartado C --------------------------------------------------------------------------
-function trianguloConsolaC() {
-  //Escribe tu codigo aqui
+function trianguloConsolaC(row) {
+	let resultado = "";
+	let contador = 0;
+	for (let i = 1; i <= row; i++) {
+		for (let j = 1; j <= i; j++) {
+			resultado += contador++ + " ";
+		}
+		resultado += "\n";
+	}
+
+	return resultado;
 }
 
 module.exports = { trianguloConsola, trianguloConsolaB, trianguloConsolaC };

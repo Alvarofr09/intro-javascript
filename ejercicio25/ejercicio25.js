@@ -11,8 +11,22 @@
  *
  *  La funcion debera retornar cada linea + un espacio en blanco '\n';
  */
-function crearCuadrado() {
-  //Escribe tu codigo aqui
+function crearCuadrado(lado) {
+	let print = "";
+
+	for (let i = 0; i < lado; ++i) {
+		for (let j = 0; j < lado; ++j) {
+			if (i === 0 || i === lado - 1 || j === 0 || j === lado - 1) {
+				print += "*";
+			} else {
+				print += " ";
+			}
+		}
+
+		print += "\n";
+	}
+
+	return print;
 }
 
 module.exports = { crearCuadrado };

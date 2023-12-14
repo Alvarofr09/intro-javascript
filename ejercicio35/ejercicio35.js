@@ -4,7 +4,13 @@
  */
 
 function sumNumberArray(array) {
-  //Escribe tu codigo aqui
+	let total = 0;
+
+	for (let i = 0; i < array.length; i++) {
+		total += array[i];
+	}
+
+	return total;
 }
 
 sumNumberArray([1, 2, 4, 5, 6]);
