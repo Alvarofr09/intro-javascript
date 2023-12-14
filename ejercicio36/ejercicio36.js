@@ -15,8 +15,8 @@ function multiplicarElementosArray() {
 	let thirdArray = [];
 
 	for (let i = 0; i < 10; i++) {
-		firstArray[i] = Math.floor(Math.random() * (20 - 1 + 1) + 1);
-		secondArray[i] = Math.floor(Math.random() * (20 - 1 + 1) + 1);
+		firstArray[i] = Math.floor(Math.random(10 + 1) * 20);
+		secondArray[i] = Math.floor(Math.random(10 + 1) * 20);
 
 		thirdArray[i] = firstArray[i] * secondArray[i];
 	}
