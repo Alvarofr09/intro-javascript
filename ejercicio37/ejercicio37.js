@@ -1,10 +1,3 @@
-//Ejercicio_37
-// Una calculadora de la letra de un DNI, pediremos el DNI por teclado
-// y nos devolvera el DNI completo con la letra. Para calcular la letra,
-// cogeremos el resto de el DNI entre 23, que sera un numero entre 0 y 22.
-// Utilizar el resultado para buscar en un array de caracteres la posicion
-// que corresponda a la letra. Esta es la tabla de caracteres:
-
 /**
  * Ejercicio 37
  * Crear un algoritmo que reciba el numero de DNI sin la letra y nos retornara el DNI
@@ -41,8 +34,36 @@
     "E"
  */
 
-function crearDni() {
-  //Escribe tu codigo aqui
+function crearDni(dni) {
+	let charDni = [
+		"T",
+		"R",
+		"W",
+		"A",
+		"G",
+		"M",
+		"Y",
+		"F",
+		"P",
+		"D",
+		"X",
+		"B",
+		"N",
+		"J",
+		"Z",
+		"S",
+		"Q",
+		"V",
+		"H",
+		"L",
+		"C",
+		"K",
+		"E",
+	];
+
+	let numChar = dni % 23;
+
+	return `DNI Completo: ${dni}${charDni[numChar]}`;
 }
 
 module.exports = { crearDni };

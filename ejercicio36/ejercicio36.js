@@ -10,21 +10,21 @@
  */
 
 function multiplicarElementosArray() {
-	let firstArray = [];
-	let secondArray = [];
-	let thirdArray = [];
+	let arrayUno = [];
+	let arrayDos = [];
+	let resultado = [];
 
 	for (let i = 0; i < 10; i++) {
-		firstArray[i] = Math.floor(Math.random(10 + 1) * 20);
-		secondArray[i] = Math.floor(Math.random(10 + 1) * 20);
+		arrayUno[i] = Math.floor(Math.random(10 + 1) * 20);
+		arrayDos[i] = Math.floor(Math.random(10 + 1) * 20);
 
-		thirdArray[i] = firstArray[i] * secondArray[i];
+		resultado[i] = arrayUno[i] * arrayDos[i];
 	}
 
 	let arrays = {
-		firstArray,
-		secondArray,
-		thirdArray,
+		arrayUno,
+		arrayDos,
+		resultado,
 	};
 
 	// console.log(arrays);

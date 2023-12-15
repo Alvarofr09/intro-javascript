@@ -5,8 +5,8 @@
  * {1: X, 2: Y, 3: Z}
  */
 
-function imprimirDescendente() {
-  //Escribe tu codigo aqui
+function imprimirDescendente(A, B, C) {
+	let nums = {};
 }
 
 module.exports = { imprimirDescendente };
