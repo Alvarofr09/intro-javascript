@@ -6,12 +6,17 @@
  * minutero en un reloj, devuelva el ángulo
  * formado por el minutero y la marca de las 12 en punto en el reloj.
  *
- * El numero no podra ser mayor que 12, si lo fuera, el algoritmo retornara
+ * El numero no podra ser mayor que 60, si lo fuera, el algoritmo retornara
  * que el numero introducido es incorrecto
  */
 
 function simpleClockAngle(num) {
-  //Escribe tu codigo aqui
+	let angle = 360 / 60;
+	if (num <= 0 || num > 12) {
+		return "El numero introducido es incorrecto";
+	} else {
+		return angle * num;
+	}
 }
 
 module.exports = { simpleClockAngle };
