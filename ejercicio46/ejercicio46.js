@@ -6,7 +6,39 @@
  */
 
 function imprimirDescendente(A, B, C) {
-	let nums = {};
+	let primero;
+	let segundo;
+	let tercero;
+	if (A >= B && A >= C) {
+		primero = A;
+		if (B >= C) {
+			segundo = B;
+			tercero = C;
+		} else {
+			segundo = C;
+			tercero = B;
+		}
+	} else if (B >= A && B >= C) {
+		primero = B;
+		if (A >= C) {
+			segundo = A;
+			tercero = C;
+		} else {
+			segundo = C;
+			tercero = A;
+		}
+	} else {
+		primero = C;
+		if (A >= B) {
+			segundo = A;
+			tercero = B;
+		} else {
+			segundo = B;
+			tercero = A;
+		}
+	}
+
+	return { 1: primero, 2: segundo, 3: tercero };
 }
 
 module.exports = { imprimirDescendente };
