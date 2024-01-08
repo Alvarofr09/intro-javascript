@@ -5,23 +5,23 @@
  */
 
 function sum(a, b) {
-  return a + b;
+	return a + b;
 }
 
 function substract(a, b) {
-  return a - b;
+	return a - b;
 }
 
 function multiply(a, b) {
-  return a * b;
+	return a * b;
 }
 
 function divide(a, b) {
-  return a / b;
+	return a / b;
 }
 
-function total() {
-  return sum(1, 2) + substract(1, 2) + multiply(1, 2) + divide(1, 2);
+function total(a, b) {
+	return sum(a, b) + substract(a, b) + multiply(a, b) + divide(a, b);
 }
 
 module.exports = { sum, substract, multiply, divide, total };
